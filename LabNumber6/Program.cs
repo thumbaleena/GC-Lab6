@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
+// still needs to prompt user to continue, convert all to lower case, move all the consonants before the first vowel, don't translate words with special characters or numbers
 namespace LabNumber6
 {
     class Program
@@ -12,6 +12,8 @@ namespace LabNumber6
 
         static void Main(string[] args)
         {
+
+            char[] consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz".ToCharArray();
             char[] vowels = "AEIOUaeiou".ToCharArray();
             StringBuilder pigLatin = new StringBuilder();
             Console.WriteLine("Welcome to the Pig Latin Translator!");
